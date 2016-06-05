@@ -1,0 +1,155 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Masonry Site JS & CSS</title>
+
+<link href="css/style.css" rel="stylesheet" type="text/css">
+<link href='https://fonts.googleapis.com/css?family=Roboto+Condensed:400,300,700' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
+
+<!--[if lt IE 9]>
+<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+
+<script src="js/modernizr-2.5.3.min.js"></script>
+<script src="js/jquery-1.7.1.min.js"></script>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<div id="main">
+  <nav>
+  	<div class="wrapperNav">
+    	<div>
+        	<ul class="topnav">
+              <li class="home"><a href="#home">Home</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Contact</a></li>
+              <li class="dropdown">
+              	<a href="#" class="dropbtn">Services<i class="fa fa-caret-down caretNav" aria-hidden="true"></i></a>
+                <div class="dropdown-content">
+                  <a href="#">Services 1</a>
+                  <a href="#">Services 2</a>
+                  <a href="#">Services 3</a>
+                </div>
+              </li>
+              <li class="dropdown">
+              	<a href="#" class="dropbtn">Blog<i class="fa fa-caret-down caretNav" aria-hidden="true"></i></a>
+                <div class="dropdown-content">
+                  <a href="#">Category 1</a>
+                  <a href="#">Category 2</a>
+                  <a href="#">Category 3</a>
+                </div>
+              </li>
+              <li class="searchBox"><input type="text" name="search" placeholder="Search.."></li>
+              <li class="icon">
+                <a href="javascript:void(0);" onclick="openNav()">&#9776;</a>
+              </li>
+            </ul>
+        </div>
+        <div id="mySidenav" class="sidenav">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+          <a href="#">Home</a>
+          <a href="#">About</a>
+          <a href="#">Contact</a>
+          <button class="accordion">Services<i class="fa fa-caret-down caretNav" aria-hidden="true"></i></button>
+            <div class="panel">
+              <a href="#">Services 1</a>
+              <a href="#">Services 2</a>
+              <a href="#">Services 3</a>
+            </div>
+          <button class="accordion">Blog<i class="fa fa-caret-down caretNav" aria-hidden="true"></i></button>
+            <div class="panel">
+              <a href="#">Category 1</a>
+              <a href="#">Category 2</a>
+              <a href="#">Category 3</a>
+            </div>  
+          <a href="#"><input type="text" name="search" class="mobile" placeholder="Search.."></a>
+        </div>
+    </div> 
+  </nav>
+
+  <header>
+  	<div class="wrapper">
+        <div>
+            <h1 class="title">&Click Blog</h1>
+        </div>
+        <div class="descriptionText">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean massa magna, ultricies ut nulla ac, ultrices dignissim nisi. Vivamus in tincidunt odio. Etiam non mauris nec libero feugiat feugiat eget nec velit. Sed ac nibh dignissim, dictum massa quis, dignissim sem. Ut sagittis lectus sem. Pellentesque eget lorem id massa lacinia molestie. Etiam sed felis id ipsum faucibus porta. Aenean posuere laoreet congue. Curabitur sed congue metus, vel rutrum nulla. Aliquam in diam gravida mauris pulvinar consectetur vitae commodo quam. Aenean odio ipsum, fringilla ac lacus luctus, accumsan lobortis erat. Proin in accumsan sapien, a vestibulum elit. Sed eget ligula felis. Duis hendrerit cursus neque at aliquam. 
+        </div>
+    </div>
+  </header>
+  
+  <section>
+      <div class="wrapper">
+        <div class="masonry">
+            <div class="item"><img src="http://placehold.it/700x150/2F343D/FFFFFF"><br />Lorem ipsum dolor sit amet, consectetur adipisicing elit.</div>
+            <div class="item"><img src="http://placehold.it/700x250/F2A334/FFFFFF"><br />Lorem ipsum dolor sit amet, consectetur adipisicing elit.Lorem ipsum dolor sit amet, consectetur adipisicing elit.</div>
+            <div class="item"><img src="http://placehold.it/700x150/28706C/FFFFFF"><br />Lorem ipsum dolor sit amet, consectetur adipisicing elit.Lorem ipsum dolor sit amet, consectetur adipisicing elit.Lorem ipsum dolor sit amet, consectetur adipisicing elit.</div>
+            <div class="item"><img src="http://placehold.it/700x200/D8524C/FFFFFF"><br />Lorem ipsum dolor sit amet, consectetur adipisicing elit.</div>
+            <div class="item"><img src="http://placehold.it/700x175/2F343D/FFFFFF"><br />Lorem ipsum dolor sit amet, consectetur adipisicing elit.Lorem ipsum dolor sit amet, consectetur adipisicing elit.Lorem ipsum dolor sit amet, consectetur adipisicing elit.</div>
+            <div class="item"><img src="http://placehold.it/700x400/28706C/FFFFFF"><br />Lorem ipsum dolor sit amet, consectetur adipisicing elit.Lorem ipsum dolor sit amet, consectetur adipisicing elit.</div>
+            <div class="item"><img src="http://placehold.it/700x200/2F343D/FFFFFF"><br />Lorem ipsum dolor sit amet, consectetur adipisicing elit.</div>
+            <div class="item"><img src="http://placehold.it/700x500/D8524C/FFFFFF"><br />Lorem ipsum dolor sit amet, consectetur adipisicing elit.Lorem ipsum dolor sit amet, consectetur adipisicing elit.Lorem ipsum dolor sit amet, consectetur adipisicing elit.</div>
+            <div class="item"><img src="http://placehold.it/700x225/2F343D/FFFFFF"><br />Lorem ipsum dolor sit amet, consectetur adipisicing elit.Lorem ipsum dolor sit amet, consectetur adipisicing elit.Lorem ipsum dolor sit amet, consectetur adipisicing elit.Lorem ipsum dolor sit amet, consectetur adipisicing elit.</div>
+            <div class="item"><img src="http://placehold.it/700x200/2F343D/FFFFFF"><br />Lorem ipsum dolor sit amet, consectetur adipisicing elit.Lorem ipsum dolor sit amet, consectetur adipisicing elit.</div>
+            <div class="item"><img src="http://placehold.it/700x225/D8524C/FFFFFF"><br />Lorem ipsum dolor sit amet, consectetur adipisicing elit.</div>
+            <div class="item"><img src="http://placehold.it/700x250/28706C/FFFFFF"><br />Lorem ipsum dolor sit amet, consectetur adipisicing elit.Lorem ipsum dolor sit amet, consectetur adipisicing elit.Lorem ipsum dolor sit amet, consectetur adipisicing elit.</div>
+            <div class="item"><img src="http://placehold.it/700x175/2F343D/FFFFFF"><br />Lorem ipsum dolor sit amet, consectetur adipisicing elit.Lorem ipsum dolor sit amet, consectetur adipisicing elit.</div>
+            <div class="item"><img src="http://placehold.it/700x250/D8524C/FFFFFF"><br />Lorem ipsum dolor sit amet, consectetur adipisicing elit.</div>
+            <div class="item"><img src="http://placehold.it/700x300/2F343D/FFFFFF"><br />Lorem ipsum dolor sit amet, consectetur adipisicing elit.Lorem ipsum dolor sit amet, consectetur adipisicing elit.Lorem ipsum dolor sit amet, consectetur adipisicing elit.Lorem ipsum dolor sit amet, consectetur adipisicing elit.</div>
+            <div class="item"><img src="http://placehold.it/700x200/F2A334/FFFFFF"><br />Lorem ipsum dolor sit amet, consectetur adipisicing elit.Lorem ipsum dolor sit amet, consectetur adipisicing elit.</div>
+            <div class="item"><img src="http://placehold.it/700x150/2F343D/FFFFFF"><br />Lorem ipsum dolor sit amet, consectetur adipisicing elit.Lorem ipsum dolor sit amet, consectetur adipisicing elit.Lorem ipsum dolor sit amet, consectetur adipisicing elit.</div>
+            <div class="item"><img src="http://placehold.it/700x350/D8524C/FFFFFF"><br />Lorem ipsum dolor sit amet, consectetur adipisicing elit.</div>
+            <div class="item"><img src="http://placehold.it/700x200/2F343D/FFFFFF"><br />Lorem ipsum dolor sit amet, consectetur adipisicing elit.Lorem ipsum dolor sit amet, consectetur adipisicing elit.Lorem ipsum dolor sit amet, consectetur adipisicing elit.Lorem ipsum dolor sit amet, consectetur adipisicing elit.</div>
+            <div class="item"><img src="http://placehold.it/700x500/28706C/FFFFFF"><br />Lorem ipsum dolor sit amet, consectetur adipisicing elit.</div>
+            <div class="item"><img src="http://placehold.it/700x250/F2A334/FFFFFF"><br />Lorem ipsum dolor sit amet, consectetur adipisicing elit.Lorem ipsum dolor sit amet, consectetur adipisicing elit.Lorem ipsum dolor sit amet, consectetur adipisicing elit.</div>
+            <div class="item"><img src="http://placehold.it/700x200/2F343D/FFFFFF"><br />Lorem ipsum dolor sit amet, consectetur adipisicing elit.Lorem ipsum dolor sit amet, consectetur adipisicing elit.</div>
+            <div class="item"><img src="http://placehold.it/700x225/D8524C/FFFFFF"><br />Lorem ipsum dolor sit amet, consectetur adipisicing elit.Lorem ipsum dolor sit amet, consectetur adipisicing elit.Lorem ipsum dolor sit amet, consectetur adipisicing elit.Lorem ipsum dolor sit amet, consectetur adipisicing elit.</div>
+            <div class="item"><img src="http://placehold.it/700x175/28706C/FFFFFF"><br />Lorem ipsum dolor sit amet, consectetur adipisicing elit.</div>
+            <div class="item"><img src="http://placehold.it/700x200/F2A334/FFFFFF"><br />Lorem ipsum dolor sit amet, consectetur adipisicing elit.Lorem ipsum dolor sit amet, consectetur adipisicing elit.</div>
+        </div>
+      </div>  
+  </section>
+</div>  
+    
+  <footer>
+    <p class="footer">Copyright 2016</p>
+  </footer>
+  
+</div>
+  
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+  <script>window.jQuery || document.write('<script src="js/jquery-1.7.1.min.js"><\/script>')</script>
+
+  <script src="js/jquery.masonry.min.js"></script>
+  <script src="js/script.js"></script>
+  
+  <script>
+  	function openNav() {
+		document.getElementById("mySidenav").style.width = "250px";
+		document.getElementById("main").style.marginLeft = "250px";
+	}
+	
+	function closeNav() {
+		document.getElementById("mySidenav").style.width = "0";
+		document.getElementById("main").style.marginLeft= "0";
+	}
+	
+	var acc = document.getElementsByClassName("accordion");
+	var i;
+	
+	for (i = 0; i < acc.length; i++) {
+		acc[i].onclick = function(){
+			this.classList.toggle("active");
+			this.nextElementSibling.classList.toggle("show");
+		}	
+	}
+  </script>
+  
+</body>
+</html>
